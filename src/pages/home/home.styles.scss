@@ -1,0 +1,9 @@
+.homepage {
+  padding: 0 10rem;
+
+  &__filter-tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
