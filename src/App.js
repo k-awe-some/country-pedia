@@ -3,13 +3,13 @@ import React from "react";
 import "./App.scss";
 
 import NavBar from "./components/nav-bar/nav-bar.component";
-import CountriesList from "./components/countries-list/countries-list.component";
+import Home from "./pages/home/home.page";
 
 const App = () => {
   return (
     <div className="App">
       <NavBar />
-      <CountriesList />
+      <Home />
     </div>
   );
 };
