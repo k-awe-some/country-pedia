@@ -1,9 +1,15 @@
 import React from "react";
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 
-function App() {
-  return <div className="App"></div>;
-}
+import NavBar from "./components/nav-bar/nav-bar.component";
+
+const App = () => {
+  return (
+    <div className="App">
+      <NavBar />
+    </div>
+  );
+};
 
 export default App;
