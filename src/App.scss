@@ -2,6 +2,10 @@
 
 .App {
   text-align: center;
-  height: 100vh;
   background-color: $light-mode-background;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
 }
