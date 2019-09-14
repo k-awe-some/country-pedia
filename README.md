@@ -8,8 +8,7 @@ Created with **React.js** and powered by the **REST Countries API**, the current
 
 **Current improvements** are being worked on, include:
 
-- Feature: Filter countries by region
-- Individual country pages
+- Individual country details pages
 - Dark mode
 
 ## Technologies - Frameworks - Libraries
