@@ -9,16 +9,22 @@ const CountryCard = ({ flag, name, region, population, capital }) => (
       style={{ backgroundImage: `url(${flag})` }}
     />
     <p className="country-card__name">{name}</p>
-    <p className="country-card__info">
-      <span>Region: </span>
-      {region}
-      <br />
-      <span>Population: </span>
-      {population}
-      <br />
-      <span>Capital: </span>
-      {capital}
-    </p>
+    <div className="country-card__info">
+      <div className="country-card__info--align-right">
+        <span>Region:</span>
+        <br />
+        <span>Population:</span>
+        <br />
+        <span>Capital:</span>
+      </div>
+      <div className="country-card__info--align-left">
+        <span>{region}</span>
+        <br />
+        <span>{population}</span>
+        <br />
+        <span>{capital}</span>
+      </div>
+    </div>
   </div>
 );
 

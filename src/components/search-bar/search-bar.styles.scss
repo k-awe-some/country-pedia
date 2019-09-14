@@ -1,11 +1,14 @@
 @import "../../sass/abstracts/variables.scss";
 
 input {
+  font-family: inherit;
+  font-size: 1.6rem;
   outline: none;
   border: none;
   height: 4rem;
-  width: 24rem;
+  width: 23rem;
   background-color: $light-mode-elements;
+  color: $light-mode-input;
   border-radius: 2px;
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.05);
   padding: 0 1rem;

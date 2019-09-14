@@ -1,10 +1,12 @@
 @import "../../sass/abstracts/variables";
 
 .filter-region {
+  font-family: inherit;
+  font-size: 1.6rem;
   outline: none;
   border-color: $light-mode-elements;
   height: 4rem;
-  width: 24rem;
+  width: 25rem;
   background-color: $light-mode-elements;
   border-radius: 2px;
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.05);

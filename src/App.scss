@@ -3,6 +3,7 @@
 .App {
   text-align: center;
   background-color: $light-mode-background;
+  min-height: 100vh;
 
   ul {
     list-style: none;
