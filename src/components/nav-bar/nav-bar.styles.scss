@@ -23,11 +23,9 @@
     svg {
       color: $dark-mode-elements;
       cursor: pointer;
+      padding-right: 3rem;
+      height: auto;
     }
 
-    &-item {
-      padding-right: 3rem;
-      cursor: pointer;
-    }
   }
 }

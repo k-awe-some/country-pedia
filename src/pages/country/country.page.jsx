@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./country.styles.scss";
 
 import CountryDetails from "../../components/country-details/country-details.component";
+import CustomButton from "../../components/custom-button/custom-button.component";
 
-const Country = ({ match }) => {
+const Country = ({ match, history }) => {
   const [countryDetails, setCountryDetails] = useState({
     flag: "",
     name: "",
@@ -43,8 +44,14 @@ const Country = ({ match }) => {
     fetchCountry();
   }, [match.params.countryId]);
 
+  const goBack = () => history.goBack();
+
   return (
     <div className="country-page">
+      <span>
+        <CustomButton onClick={goBack}>&#8592; Back</CustomButton>
+      </span>
+
       <CountryDetails countryDetails={countryDetails} />
     </div>
   );
