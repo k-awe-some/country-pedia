@@ -1,9 +1,16 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "./country-card.styles.scss";
 
-const CountryCard = ({ flag, name, region, population, capital }) => (
-  <div className="country-card">
+const CountryCard = ({
+  flag,
+  name,
+  region,
+  population,
+  capital,
+  nativeName
+}) => (
+  <Link to={`${name.toLowerCase()}`} className="country-card">
     <div
       className="country-card__flag"
       style={{ backgroundImage: `url(${flag})` }}
@@ -25,7 +32,7 @@ const CountryCard = ({ flag, name, region, population, capital }) => (
         <span>{capital}</span>
       </div>
     </div>
-  </div>
+  </Link>
 );
 
 export default CountryCard;
