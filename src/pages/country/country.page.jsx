@@ -14,7 +14,8 @@ const Country = ({ match }) => {
     capital: "",
     topLevelDomain: [],
     currencies: [],
-    languages: []
+    languages: [],
+    borders: []
   });
 
   useEffect(() => {
@@ -34,12 +35,13 @@ const Country = ({ match }) => {
         capital: country.capital,
         topLevelDomain: country.topLevelDomain,
         currencies: country.currencies,
-        languages: country.languages
+        languages: country.languages,
+        borders: country.borders
       });
     };
 
     fetchCountry();
-  }, []);
+  }, [match.params.countryId]);
 
   return (
     <div className="country-page">

@@ -1,6 +1,8 @@
 import React from "react";
 import "./country-details.styles.scss";
 
+import CountryBadge from "../country-badge/country-badge.component";
+
 const CountryDetails = ({ countryDetails }) => {
   const {
     flag,
@@ -12,12 +14,13 @@ const CountryDetails = ({ countryDetails }) => {
     capital,
     topLevelDomain,
     currencies,
-    languages
+    languages,
+    borders
   } = countryDetails;
 
   return (
     <div className="country">
-      <img className="country__flag" src={`${flag}`} />
+      <img className="country__flag" src={`${flag}`} alt={`${name}'s flag`} />
 
       <div className="country__details">
         <div className="country__details--bold-text">{name}</div>
@@ -54,15 +57,15 @@ const CountryDetails = ({ countryDetails }) => {
             <span>
               <strong>Top-level Domain: </strong>
             </span>
-            {topLevelDomain.map(domain => (
-              <span>{domain}</span>
+            {topLevelDomain.map((domain, index) => (
+              <span key={index}>{domain}</span>
             ))}
             <br />
             <span>
               <strong>Currencies: </strong>
             </span>
-            {currencies.map(currency => (
-              <span>
+            {currencies.map((currency, index) => (
+              <span key={index}>
                 {currency.name} ({currency.symbol})
               </span>
             ))}
@@ -70,14 +73,25 @@ const CountryDetails = ({ countryDetails }) => {
             <span>
               <strong>Languages: </strong>
             </span>{" "}
-            {languages.map(language => (
-              <span>{language.name} </span>
-            ))}
+            {languages
+              .map((language, index) => (
+                <span key={index}>{language.name}</span>
+              ))
+              .reduce((prev, curr) => {
+                return prev === null ? [curr] : [...prev, ", ", curr];
+              }, null)}
           </div>
         </div>
 
         <div className="country__details--flex">
-          <span>Border countries</span>
+          <span className="country__details--flex-row">
+            <strong>Border countries: </strong>
+          </span>
+          <div className="country__details--flex-row grid">
+            {borders.map((border, index) => (
+              <CountryBadge country={border} key={index} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
