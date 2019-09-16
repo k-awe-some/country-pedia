@@ -88,9 +88,13 @@ const CountryDetails = ({ countryDetails }) => {
             <strong>Border countries: </strong>
           </span>
           <div className="country__details--flex-row grid">
-            {borders.map((border, index) => (
-              <CountryBadge country={border} key={index} />
-            ))}
+            {borders.length === 0 ? (
+              <span>none</span>
+            ) : (
+              borders.map((border, index) => (
+                <CountryBadge country={border} key={index} />
+              ))
+            )}
           </div>
         </div>
       </div>
