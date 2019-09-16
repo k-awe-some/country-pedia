@@ -1,6 +1,7 @@
 import React from "react";
 import "./country-details.styles.scss";
 
+import { formatNumber } from "../../utils/helpers";
 import CountryBadge from "../country-badge/country-badge.component";
 
 const CountryDetails = ({ countryDetails }) => {
@@ -35,7 +36,7 @@ const CountryDetails = ({ countryDetails }) => {
             <span>
               <strong>Population: </strong>
             </span>
-            {population}
+            {formatNumber(population)}
             <br />
             <span>
               <strong>Region: </strong>

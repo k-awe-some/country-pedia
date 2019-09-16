@@ -12,7 +12,6 @@
 # production
 /build
 /src/firebase/firebase.init.js
-/src/utils
 
 # misc
 .DS_Store
