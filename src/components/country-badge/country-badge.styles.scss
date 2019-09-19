@@ -1,8 +1,12 @@
 @import "../../sass/abstracts/variables";
 
 .country-badge {
+  &-dark {
+    background-color: $dark-mode-elements;
+  }
+
   width: 16rem;
-  height: 3.6rem;
+  height: 4rem;
   margin-right: 2rem;
   background-color: $light-mode-elements;
   border: none;
@@ -10,7 +14,7 @@
   line-height: 100%;
   text-align: center;
   font-size: 1.6rem;
-  color: $light-mode-text;
+  color: inherent;
   display: flex;
   justify-content: center;
   align-items: center;

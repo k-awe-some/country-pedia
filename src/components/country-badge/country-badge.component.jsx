@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import "./country-badge.styles.scss";
+
+import ThemeContext from "../../contexts/theme.context";
 
 const CountryBadge = ({ country }) => {
   const [countryName, setCountryName] = useState(null);
@@ -17,8 +19,13 @@ const CountryBadge = ({ country }) => {
     fetchData();
   }, [country]);
 
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <Link to={`/${countryName}`} className="country-badge">
+    <Link
+      to={`/${countryName}`}
+      className={`country-badge country-badge-${theme}`}
+    >
       {countryName}
     </Link>
   );

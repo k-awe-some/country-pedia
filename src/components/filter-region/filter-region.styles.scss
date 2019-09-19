@@ -1,15 +1,24 @@
 @import "../../sass/abstracts/variables";
 
 .filter-region {
+  &-dark {
+    background-color: $dark-mode-elements;
+
+    &:focus {
+      border-color: $dark-mode-input;
+    }
+  }
+
   font-family: inherit;
   font-size: 1.6rem;
   outline: none;
-  border-color: $light-mode-elements;
+  border-color: transparent;
   height: 4rem;
   width: 25rem;
   background-color: $light-mode-elements;
+  color: inherit;
   border-radius: 2px;
-  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
   padding: 0 1rem;
   cursor: pointer;
 

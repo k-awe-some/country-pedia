@@ -1,7 +1,6 @@
 @import "./sass/abstracts/variables";
 
 .App {
-  background-color: $light-mode-background;
   min-height: 100vh;
 
   ul {
@@ -13,4 +12,14 @@
     text-decoration: none;
     color: inherit;
   }
+}
+
+.light {
+  background-color: $light-mode-background;
+  color: $light-mode-text;
+}
+
+.dark {
+  background-color: $dark-mode-background;
+  color: $dark-mode-text;
 }
