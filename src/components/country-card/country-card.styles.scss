@@ -3,8 +3,8 @@
 
 .country-card {
   @include respond(big-phone) {
-    width: 50vw;
-    height: 280px;
+    width: 70vw;
+    height: 300px;
   }
 
   @include respond(small-phone) {

@@ -2,7 +2,6 @@
 
 .country-page {
   @include respond(big-phone) {
-    padding: 0 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;

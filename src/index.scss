@@ -7,16 +7,8 @@ html {
     font-size: 70%;
   }
 
-  // @include respond(max1023) {
-  //   // font-size: 57.5%;
-  // }
-
-  @include respond(tab-portrait) {
-    font-size: 57.5%;
-  }
-
   @include respond(big-phone) {
-    font-size: 50%;
+    font-size: 57%;
   }
 
 }
