@@ -1,6 +1,5 @@
 import React, { useState, useMemo } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import logo from "./logo.svg";
 import "./App.scss";
 
 import ThemeContext from "./contexts/theme.context";

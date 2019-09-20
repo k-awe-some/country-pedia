@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { IoIosSunny, IoIosMoon } from "react-icons/io";
+import logo from "../../logo.png";
 import "./nav-bar.styles.scss";
 
 import ThemeContext from "../../contexts/theme.context";
@@ -12,7 +13,8 @@ const NavBar = () => {
   return (
     <div className={`nav-bar nav-bar-${theme}`}>
       <Link to="/" className="nav-bar__logo">
-        WHERE IN THE WORLD?
+        <img className="nav-bar__logo--image" src={logo} alt="CountryPedia" />
+        <p className="nav-bar__logo--text">CountryPedia</p>
       </Link>
 
       <div className="nav-bar__links">
@@ -27,13 +29,15 @@ const NavBar = () => {
           )}
         </button>
 
-        <CustomButton
-          onClick={() =>
-            window.open("https://github.com/k-awe-some/where-in-the-world")
-          }
-        >
-          GitHub{" "}
-        </CustomButton>
+        <div className="nav-bar__links--phone-display-none">
+          <CustomButton
+            onClick={() =>
+              window.open("https://github.com/k-awe-some/where-in-the-world")
+            }
+          >
+            GitHub{" "}
+          </CustomButton>
+        </div>
       </div>
     </div>
   );
