@@ -1,15 +1,12 @@
 # Where in the World
 
-Where in the World is an interactive list that contains information of countries around the world.
+Fully responsive, [Where in the World](https://country-pedia.firebaseapp.com) is an interactive list that contains information of countries around the world.
 
 ## Description
 
-Created with **React.js** and powered by the **REST Countries API**, the current version of this web app allows users to either _search for a country's information_ by its name or _filter countries by region_.
+Created with **React.js** and powered by the **REST Countries API**, the current version of this web app allows users to either _search for a country's information_ by its name or _filter countries by region_. Routing between countries is also possible thanks to the implementation of **React Router DOM**.
 
-**Current improvements** are being worked on, include:
-
-- Dark mode
-- Styling
+A dark mode is integrated for readability purposes.
 
 ## Technologies - Frameworks - Libraries
 
