@@ -1,6 +1,16 @@
 @import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
 
 .country-card {
+  @include respond(big-phone) {
+    width: 50vw;
+    height: 280px;
+  }
+
+  @include respond(small-phone) {
+    width: 60vw;
+  }
+
   &-dark {
     background-color: $dark-mode-elements;
   }
@@ -20,6 +30,10 @@
     height: 150px;
     border-radius: 5px 5px 0 0;
     box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.05);
+
+    @include respond(big-phone) {
+      height: 50%;
+    }
   }
 
   &__name {
@@ -29,6 +43,10 @@
   }
 
   &__info {
+    @include respond(big-phone) {
+      padding: 10px 0;
+    }
+
     font-size: 1.6rem;
     display: flex;
     flex-direction: row;

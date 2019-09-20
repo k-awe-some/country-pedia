@@ -1,1 +1,1 @@
-.countries-list{display:grid;grid-template-columns:repeat(auto-fill, minmax(250px, 250px));grid-gap:2rem;justify-content:space-between;margin:5rem 0 0}
+.countries-list{display:grid;grid-template-columns:repeat(auto-fill, minmax(250px, 250px));grid-gap:auto;justify-content:space-between;margin:5rem 0 0}@media (max-width: 425px){.countries-list{justify-content:center}}@media (max-width: 425px){.countries-list li{display:flex;justify-content:center}}

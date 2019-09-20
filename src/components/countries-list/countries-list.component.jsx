@@ -8,7 +8,7 @@ const CountriesList = ({ countries }) => {
   return (
     <ul className="countries-list">
       {countries.map(country => (
-        <li key={country.numericCode}>
+        <li className="countries-list__item" key={country.numericCode}>
           <CountryCard
             flag={country.flag}
             name={country.name}

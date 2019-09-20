@@ -1,6 +1,15 @@
 @import "../../sass/abstracts/variables.scss";
+@import "../../sass/abstracts/mixins";
 
 .input {
+  @include respond(big-phone) {
+    margin-bottom: 10px;
+    width: 32rem;
+  }
+  @include respond(small-phone) {
+    width: 28rem;
+  }
+
   &-dark {
     background-color: $dark-mode-elements;
     color: $dark-mode-input;

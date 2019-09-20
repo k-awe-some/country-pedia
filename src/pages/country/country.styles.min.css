@@ -1,1 +1,1 @@
-.country-page{padding:0 10rem}
+.country-page{padding:0 10rem}@media (max-width: 425px){.country-page{padding:0 8rem;display:flex;flex-direction:column;align-items:center}}

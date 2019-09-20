@@ -1,0 +1,38 @@
+// MEDIA QUERY MANAGER
+@mixin respond($breakpoint) {
+  @if $breakpoint == big-desktop {
+    @media (min-width: 1536px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-landscape {
+    @media (max-width: 1249px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-portrait {
+    @media (max-width: 720px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-portrait-small {
+    @media (max-width: 684px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-phone {
+    @media (max-width: 425px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == small-phone {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+}

@@ -1,12 +1,31 @@
+@import "./sass/abstracts/mixins";
+
 html {
   font-size: 62.5%;
+
+  @include respond(big-desktop) {
+    font-size: 70%;
+  }
+
+  // @include respond(max1023) {
+  //   // font-size: 57.5%;
+  // }
+
+  @include respond(tab-portrait) {
+    font-size: 57.5%;
+  }
+
+  @include respond(big-phone) {
+    font-size: 50%;
+  }
+
 }
 
 body {
   margin: 0;
-  font-family: 'PT Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "PT Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

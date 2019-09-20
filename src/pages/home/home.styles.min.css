@@ -1,1 +1,1 @@
-.homepage{padding:0 10rem}.homepage__filter-tools{display:flex;flex-direction:row;justify-content:space-between}
+.homepage{padding:0 10rem}.homepage__filter-tools{display:flex;flex-direction:row;justify-content:space-between}@media (max-width: 425px){.homepage__filter-tools{display:flex;flex-direction:column;justify-content:center;align-items:center}}

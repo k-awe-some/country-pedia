@@ -1,6 +1,14 @@
 @import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
 
 .filter-region {
+  @include respond(big-phone) {
+    width: 34rem;
+  }
+  @include respond(small-phone) {
+    width: 30rem;
+  }
+
   &-dark {
     background-color: $dark-mode-elements;
 

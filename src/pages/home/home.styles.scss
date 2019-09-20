@@ -1,3 +1,5 @@
+@import "../../sass/abstracts/mixins";
+
 .homepage {
   padding: 0 10rem;
 
@@ -5,5 +7,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @include respond(big-phone) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
