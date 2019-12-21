@@ -1,4 +1,4 @@
-# Where in the World
+# CountryPedia
 
 Fully responsive, [Where in the World](https://country-pedia.firebaseapp.com) is an interactive list that contains information of countries around the world.
 
